@@ -1,0 +1,11 @@
+package salida_datos;
+public class Salida_datos {
+    public static void main(String[] args) {
+        int a = 10;
+        double b = 20.5;
+        System.out.println("El valor de a es: " + a);
+        System.out.println("El valor de b es: " + b);
+        System.out.println("La suma es: " + (a + b));
+    }
+    
+}
