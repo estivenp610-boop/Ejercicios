@@ -1,0 +1,20 @@
+public static boolean esPalindromo(String cadena) {
+    cadena = cadena.toLowerCase().replace(" ", "");
+    int fin = cadena.length() - 1;
+    for (int ini = 0; ini < fin; ini++) {
+        if (cadena.charAt(ini) != cadena.charAt(fin)) {
+            return false;
+        }
+        fin--;
+    }
+    return true;
+}
+//ARREGLO OBJETOS
+Persona[] lista = new Persona[3];
+lista[0] = new Persona("Juan", 20);
+lista[1] = new Persona("Maria", 22);
+lista[2] = new Persona("Pedro", 19);
+
+for (Persona p : lista) {
+    p.mostrarDatos();
+}
